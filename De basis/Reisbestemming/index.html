@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home - Reisbestemming</title>
+
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="Activiteiten.html">Activiteiten</a></li>
+				<li><a href="Eten.html">Eten</a></li>
+			</ul>
+		</nav>
+
+		<h1>Lagos - Portugal</h1>
+		<p>
+			Lagos is een stad in de Algarve in het zuiden van Portugal. Het staat bekend om zijn ommuurde oude stad, kliffen en Atlantische stranden. Steile houten trappen leiden
+			naar de zanderige baai Praia do Camilo. De nabijgelegen kliffen van Ponta de Piedade bieden een prachtig uitzicht op de landtong en een vuurtoren. Igreja de Santo
+			António, een sierlijke 18e-eeuwse kerk, ligt tegenover het Castelo dos Governadores, een kasteel met een barokke gevel en wachttorens.
+		</p>
+		<img src="images/Lagos.jpg" alt="Lagos" width="auto" height="200" />
+
+		<h3>Vluchten</h3>
+		<table>
+			<thead>
+				<tr>
+					<th>Maatschappij</th>
+					<th>Vertrek</th>
+					<th>Aankomst</th>
+					<th>Oorsprong</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>KLM</td>
+					<td>5:00</td>
+					<td>7:10</td>
+					<td>Amsterdam</td>
+				</tr>
+				<tr>
+					<td>Ryanair</td>
+					<td>6:15</td>
+					<td>7:25</td>
+					<td>Porto</td>
+				</tr>
+				<tr>
+					<td>EasyJet</td>
+					<td>6:25</td>
+					<td>9:25</td>
+					<td>London</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h3>Boek een reis</h3>
+		<form>
+			<span>Klant</span>
+			<label for="Naam">Naam</label>
+			<input type="text" id="Naam" name="Naam" required placeholder="Naam" />
+
+			<div>
+				<label for="M">M</label>
+				<input type="radio" id="M" name="M/V" value="M" required />
+			</div>
+			<div>
+				<label for="V">V</label>
+				<input type="radio" id="V" name="M/V" value="V" required />
+			</div>
+
+			<label for="Adres">Adres</label>
+			<input type="text" id="Adres" name="Adres" required placeholder="Adres + huisnummer" />
+
+			<label for="Postcode">Postcode</label>
+			<input type="text" id="Postcode" name="Postcode" required placeholder="Postcode" />
+
+			<label for="Email">Email</label>
+			<input type="email" id="Email" name="Email" required placeholder="Email" />
+
+			<label for="Telefoonnummer">Telefoonnummer</label>
+			<input type="tel" id="Telefoonnummer" name="Telefoonnummer" required placeholder="Telefoonnummer" />
+
+			<span>Reis</span>
+			<label for="Vertrekdatum">Vertrekdatum</label>
+			<input type="date" id="Vertrekdatum" name="Vertrekdatum" required />
+
+			<label for="Retourdatum">Retourdatum</label>
+			<input type="date" id="Retourdatum" name="Retourdatum" required />
+
+			<label for="AantalPersonen">Aantal personen</label>
+			<input type="number" id="AantalPersonen" name="AantalPersonen" required />
+
+			<label for="Vlucht">Vlucht</label>
+			<select id="Vlucht" name="Vlucht" required>
+				<option value="KLM">KLM</option>
+				<option value="Ryanair">Ryanair</option>
+				<option value="EasyJet">EasyJet</option>
+			</select>
+
+			<label for="Hotel">Hotel</label>
+			<select id="Hotel" name="Hotel" required>
+				<option value="Tivoli Lagos">Tivoli Lagos</option>
+				<option value="Carvi Beach Hotel">Carvi Beach Hotel</option>
+				<option value="Vila Gale Lagos">Vila Gale Lagos</option>
+			</select>
+
+			<button type="submit">Boek reis</button>
+		</form>
+	</body>
+</html>

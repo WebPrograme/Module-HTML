@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Voetbal</title>
+
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<nav>
+			<h3>Voetbal</h3>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="pages/regels.html">Regels</a></li>
+				<li><a href="pages/benodigdheden.html">Benodigdheden</a></li>
+				<li><a href="pages/bekende-spelers.html">Bekende spelers</a></li>
+			</ul>
+		</nav>
+
+		<main class="text-center">
+			<img src="images/voetbal.jpg" alt="Voetbal" />
+			<h1>Voetbal</h1>
+			<p>
+				Voetbal is een balsport waarbij twee teams van elf spelers moeten proberen de bal in het doel van de tegenstander te krijgen. De bal mag met ieder deel van het
+				lichaam gespeeld worden, met uitzondering van de armen en handen. Het team dat de meeste doelpunten maakt wint de wedstrijd.
+			</p>
+			<p>
+				Een belangrijke regel in voetbal is de <dfn>buitenspel</dfn> regel. Een speler staat <dfn>buitenspel</dfn> als hij dichter bij de doellijn van de tegenstander is
+				dan de bal en de voorlaatste tegenstander op het moment dat de bal naar hem wordt gespeeld, tenzij hij zich op zijn eigen helft van het veld bevindt.
+			</p>
+			<p>
+				In voetbal worden vaak afkortingen gebruikt om termen en posities snel aan te duiden. Bijvoorbeeld, <abbr>GK</abbr> staat voor "Goalkeeper" (doelman) en
+				<abbr>CB</abbr> staat voor "Center Back" (centrale verdediger).
+			</p>
+
+			<blockquote>"Voetbal is een spel van fouten. Wie de minste fouten maakt wint." <br />-Johan Cruijf</blockquote>
+
+			<form class="review-form">
+				<h3>Review</h3>
+				<div class="form-inline">
+					<div>
+						<label for="name">Naam:</label>
+						<input type="text" id="name" name="name" placeholder="Naam" required />
+					</div>
+					<div>
+						<label for="rating">Beoordeling:</label>
+						<select id="rating" name="rating" required>
+							<option value="1">1 ster</option>
+							<option value="2">2 sterren</option>
+							<option value="3">3 sterren</option>
+							<option value="4">4 sterren</option>
+							<option value="5">5 sterren</option>
+						</select>
+					</div>
+				</div>
+				<div>
+					<label for="review">Review:</label>
+					<textarea id="review" name="review" required placeholder="Review"></textarea>
+				</div>
+
+				<button type="submit">Verstuur</button>
+			</form>
+		</main>
+	</body>
+</html>

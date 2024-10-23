@@ -1,0 +1,24 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+p, ul, ol {
+    font-size: 1rem;
+    color: #5c5353;
+}
+
+a {
+    color: #0000ff;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #ff0000;
+}

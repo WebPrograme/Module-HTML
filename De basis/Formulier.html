@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Formulier</title>
+	</head>
+	<body>
+		<form>
+			<label for="Boek">Boek</label>
+			<select name="Boek" id="Boek" required>
+				<option value="Letters To Milena">Letters To Milena</option>
+				<option value="Crime and Punishment">Crime and Punishment</option>
+				<option value="To Kill a Mockingbird">To Kill a Mockingbird</option>
+			</select>
+
+			<label for="Naam">Naam</label>
+			<input type="text" name="Naam" id="Naam" required placeholder="Naam" />
+
+			<label for="Adres">Adres</label>
+			<input type="text" name="Adres" id="Adres" required placeholder="Adres + huisnummer" />
+
+			<label for="Postcode">Postcode</label>
+			<input type="text" name="Postcode" id="Postcode" required placeholder="Postcode" />
+
+			<label for="Land">Land</label>
+			<select name="Land" id="Land" required>
+				<option value="Nederland">Nederland</option>
+				<option value="België">België</option>
+				<option value="Luxemburg">Luxemburg</option>
+			</select>
+
+			<fieldset>
+				<legend>Leveringsmethode</legend>
+
+				<input type="radio" name="Leveringsmethode" id="DHL" value="DHL" required />
+				<label for="DHL">DHL</label>
+
+				<input type="radio" name="Leveringsmethode" id="PostNL" value="PostNL" required />
+				<label for="PostNL">PostNL</label>
+
+				<input type="radio" name="Leveringsmethode" id="De Post" value="De Post" required />
+				<label for="De Post">De Post</label>
+			</fieldset>
+
+			<button type="submit">Verstuur</button>
+		</form>
+	</body>
+</html>

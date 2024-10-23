@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Film</title>
+
+		<link rel="stylesheet" href="../style.css" />
+	</head>
+	<body>
+		<nav>
+			<h3>FILM</h3>
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="acteurs.html">Acteurs</a></li>
+				<li><a href="fotos.html">Foto's</a></li>
+				<li><a href="recenties.html">Recenties</a></li>
+			</ul>
+		</nav>
+
+		<main>
+			<div class="landing">
+				<h1>Recenties</h1>
+			</div>
+			<p></p>
+
+			<div class="reviews">
+				<form class="review-form">
+					<h3>Plaats een recentie</h3>
+					<div class="form-inline">
+						<div>
+							<label for="name">Naam:</label>
+							<input type="text" id="name" name="name" required placeholder="Naaam" />
+						</div>
+						<div>
+							<label for="rating">Beoordeling:</label>
+							<select id="rating" name="rating" required>
+								<option value="1">★☆☆☆☆</option>
+								<option value="2">★★☆☆☆</option>
+								<option value="3">★★★☆☆</option>
+								<option value="4">★★★★☆</option>
+								<option value="5">★★★★★</option>
+							</select>
+						</div>
+					</div>
+
+					<label for="review">Recentie:</label>
+					<textarea id="review" name="review" required placeholder="Review"></textarea>
+					<button type="submit">Plaats recentie</button>
+				</form>
+
+				<div class="review">
+					<img src="../images/profile.webp" alt="Profielfoto" />
+					<p>
+						<strong>John Doe</strong>
+						<dfn>★★★★★</dfn>
+						<br />
+						Interstellar is een van de beste films die ik ooit heb gezien. Het verhaal is meeslepend en de acteerprestaties zijn fantastisch.
+					</p>
+				</div>
+
+				<div class="review">
+					<img src="../images/profile.webp" alt="Profielfoto" />
+					<p>
+						<strong>Jane Doe</strong>
+						<dfn>★★★☆☆</dfn>
+						<br />
+						Interstellar is een visueel spektakel, maar het verhaal is soms wat verwarrend. De film is zeker de moeite waard om te kijken, maar het is niet voor
+						iedereen.
+					</p>
+				</div>
+
+				<div class="review">
+					<img src="../images/profile.webp" alt="Profielfoto" />
+					<p>
+						<strong>Joe Doe</strong>
+						<dfn>★★★★☆</dfn>
+						<br />
+						Interstellar is een prachtige film met een geweldige soundtrack. Het einde is misschien wat vreemd, maar het past wel bij de rest van de film.
+					</p>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
