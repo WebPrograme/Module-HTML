@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.left {
+    float: left;
+    padding: 10px;
+}
+
+p.left {
+    width: 50%;
+}
+
+.right {
+    float: right;
+    padding: 10px;
+}
+
+p.right {
+    width: 50%;
+}

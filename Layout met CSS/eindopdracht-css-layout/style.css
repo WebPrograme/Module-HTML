@@ -1,0 +1,151 @@
+/*
+
+EINDOPDRACHT CSS
+
+Kleuren:
+
+Rood: #af2100 (donker / hover) #9e1d00
+
+Grijswaarden: #bdbdbd #656565 #aeaeae
+
+ */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url(img/white-bg.png);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 800px;
+    height: 125px;
+    margin: 0 auto;
+}
+
+header .logo {
+    display: flex;
+    align-items: end;
+    height: 125px;
+    background-color: #af2100;
+    border-bottom: 8px solid #9e1d00;
+    color: #fff;
+    padding: 0 2.5rem .25rem 2.5rem;
+}
+
+header nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+    margin-bottom: 8px;
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #af2100;
+    transition: all .15s;
+}
+
+header nav a:hover {
+    color: #9e1d00;
+}
+
+main {
+    width: 800px;
+    margin: 0 auto;
+}
+
+article {
+    margin-top: 6rem;
+    padding-bottom: 5px;
+    overflow: hidden;
+}
+
+article:last-of-type {
+    margin-bottom: 8rem;
+}
+
+article aside {
+    float: left;
+    width: 15%;
+    color: #bdbdbd;
+}
+
+article aside h2 {
+    font-weight: 500;
+}
+
+article section {
+    float: right;
+    width: 82%;
+}
+
+article section h3 {
+    font-style: italic;
+    color: #af2100;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+article section p {
+    font-size: .9rem;
+    line-height: 1.75;
+    margin-block: 1rem 1.5rem;
+}
+
+article section a {
+    text-decoration: none;
+    background-color: #af2100;
+    padding: .4rem 3.5rem;
+    color: #fff;
+    font-weight: 500;
+    font-style: italic;
+    transition: all .15s;
+}
+
+article section a:hover {
+    background-color: #9e1d00;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    width: 100%;
+    background: url(img/black-bg.png);
+    padding: 4rem 0 3rem 0;
+}
+
+footer h2 {
+    color: #656565;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: #fff;
+    font-size: .9rem;
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: none;
+    transition: all .15s;
+}
