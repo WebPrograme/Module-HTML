@@ -62,7 +62,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-section.content {
+.content {
     float: left;
     width: 70%;
 
@@ -82,20 +82,20 @@ aside {
     margin-top: 0;
 }
 
-article {
+.article-teaser {
     padding-block: 2rem;
     border-bottom: 1px solid rgb(128, 128, 128);
 }
 
-article:first-of-type {
+.article-teaser:first-of-type {
     padding-top: 0;
 }
 
-article:last-of-type {
+.article-teaser:last-of-type {
     border-bottom: none;
 }
 
-article .article-title {
+.article-teaser .article-title {
     font-size: 1.5rem;
     font-weight: 800;
     font-family: serif;
@@ -103,10 +103,11 @@ article .article-title {
     margin-bottom: 0rem;
 }
 
-article .article-title:hover {
+.article-teaser .article-title:hover {
     text-decoration: underline;
 }
 
+.article-teaser header p,
 article header p {
     margin-top: 0;
     color: rgb(128, 128, 128);
@@ -114,11 +115,12 @@ article header p {
     font-size: 0.8rem;
 }
 
+.article-teaser header p a,
 article header p a {
     color: rgb(46, 46, 46);
 }
 
-article header p a:hover {
+.article-teaser header p a:hover {
     text-decoration: underline;
 }
 
@@ -134,6 +136,7 @@ article header p a:hover {
     padding: 0.2rem 0.4rem;
     border-radius: 0.25rem;
     font-size: 0.8rem;
+    cursor: pointer;
 }
 
 article .article-link {
@@ -214,4 +217,106 @@ aside .search:focus {
     color: rgb(0, 0, 0,.4);
     padding-block: 1rem;
     text-align: center;
+}
+
+.article-header {
+    margin-bottom: 4rem;
+}
+
+.article-title {
+    font-size: 3rem;
+    line-height: 1;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.article-info {
+    color: rgb(175, 175, 175);
+}
+
+.article-lead {
+    font-size: 1.5rem;
+    color: rgba(142, 142, 142);
+    line-height: 2rem;
+}
+
+.article-section {
+    margin: 4rem 0;
+}
+
+.article-section-title {
+    font-size: 1.5rem;
+    color: rgb(140, 140, 140);
+}
+
+figure {
+    margin-block: 1rem;
+}
+
+figure.float-left {
+    width: 35%;
+}
+
+.float-left {
+    float: left;
+    margin-inline: 0 1rem;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.8rem;
+    color: rgb(130, 130, 130);
+}
+
+.pull-quote {
+    background-image: url('images/quote.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: rgb(228, 228, 228);
+    border-left: .5rem solid rgb(171, 171, 171);
+    color: rgb(0,0,0, .5);
+    margin: 2rem 0;
+    padding: 1rem;
+}
+
+.form-row {
+    margin-bottom: 1rem;
+}
+
+input, textarea {
+    box-sizing: border-box;
+    padding: 1rem;
+    background: rgb(235, 235, 235);
+    border: none;
+    width: 100%;
+}
+
+input:focus, textarea:focus {
+    border-color: dimgrey;
+}
+
+p:has(input[type="text"]) {
+    float: left;
+    width: 47%;
+}
+
+p:has(input[type="email"]) {
+    float: right;
+    width: 47%;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 250px;
+}
+
+button[type="submit"] {
+    float: right;
+    padding: .5rem;
+    border: none;
+    background-color: dimgray;
+    color: white;
+    cursor: pointer;
 }
