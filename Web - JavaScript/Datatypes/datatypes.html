@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			let naam, kostprijs, aantal;
+
+			naam = prompt('Wat is de naam van het tijdschrift?');
+			kostprijs = prompt('Wat is de kostprijs van het tijdschrift?');
+			aantal = prompt('Hoeveel exemplaren van het tijdschrift zijn er verkocht?');
+			console.log(aantal, kostprijs, naam);
+
+			document.write(`<p>De naam van het tijdschrift is: ${naam}</p>`);
+			document.write(`<p>De kostprijs van het tijdschrift is: ${kostprijs}</p>`);
+			document.write(`<p>Het aantal verkochte exemplaren is: ${aantal}</p>`);
+			document.write(`<p>De totale opbrengst is: ${parseFloat(kostprijs) * parseInt(aantal)}</p>`);
+		</script>
+	</body>
+</html>

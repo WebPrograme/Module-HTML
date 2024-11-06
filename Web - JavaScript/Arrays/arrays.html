@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			let maanden = ['januari', 'februari', 'maart'];
+
+			maanden[3] = 'april';
+			maanden[4] = 'mei';
+			maanden[5] = 'juni';
+
+			maanden.push('juli');
+
+			maanden.push('augustus', 'september', 'oktober', 'november', 'december');
+
+			document.write(`<p>${maanden.join(',')}</p>`);
+			document.write(`<p>Er zijn ${maanden.length} maanden in de array.</p>`);
+
+			let marchPosition = maanden.indexOf('March');
+			document.write(`<p>De maand "March" bevindt zich in de array op positie: ${marchPosition}</p>`);
+
+			let namen = ['Erik', 'Sofie', 'Adam', 'Zorro'];
+			namen.sort();
+
+			document.write(`<p>De gesorteerde namen zijn: ${namen.join(',')}</p>`);
+
+			let zoekNaam = prompt('Welke naam wil je zoeken?');
+			let naamPositie = namen.indexOf(zoekNaam);
+			document.write(`<p>De naam ${zoekNaam} bevindt zich op positie: ${naamPositie}</p>`);
+
+			let volledigeNaam = prompt('Wat is je volledige naam (voornaam achternaam)?');
+
+			let naamArray = volledigeNaam.split(' ');
+			let omgekeerdeNaamArray = naamArray.reverse();
+			let omgekeerdeNaam = omgekeerdeNaamArray.join(' ');
+
+			// Step 13: Write the reversed name to the document
+			document.write(`<p>Jouw naam genoteerd als familienaam voornaam is: ${omgekeerdeNaam}</p>`);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			// 1
+			const firstName = 'Yarne';
+			const lastName = 'Gooris';
+			const fullName = firstName + ' ' + lastName;
+			document.write(`Hallo, ${fullName}!`);
+
+			// 2
+			const nameLength = fullName.length;
+			document.write(`<br>Je naam bevat ${nameLength} karakters lang.`);
+
+			// 3
+			const fileName = 'javaScriptFramWork';
+			document.write(`<p>De originele file name is: '${fileName}'</p>`);
+
+			// 4
+			const fileNameLowerCase = fileName.toLowerCase();
+			document.write(`<p>De file name kan beter in kleine letters getypt worden, dus: '${fileNameLowerCase}'</p>`);
+
+			// 5
+			const fileNameFirstPart = fileName.substring(0, 10);
+			const fileNameLastPart = fileName.substring(10);
+			document.write(`<p>Als je ${fileNameLowerCase} opsplitst krijg je: '${fileNameFirstPart}' en '${fileNameLastPart}'</p>`);
+
+			// 6
+			const sixChar = fileName.charAt(5);
+			document.write(`<p>Het zesde karakter van ${fileNameLowerCase} is: '${sixChar}'</p>`);
+
+			// 7
+			const email = 'jan.klaassen@mail.com';
+			const atPosition = email.indexOf('@');
+			document.write(`<p>De positie van het '@' karakter in ${email} is: ${atPosition}</p>`);
+
+			// 8
+			const nameFromEmail = email.substring(0, atPosition);
+			document.write(`<p>De naam uit het email adres ${email} is: ${nameFromEmail}</p>`);
+
+			// 9
+			const longText = 'Deze tekst is te lang en zal worden afgekapt op 8 tekens m.b.v. substr()';
+			const truncatedText = longText.substr(0, 8);
+			document.write(`<p>De originele tekst: '${longText}' wordt dan: '${truncatedText}'</p>`);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			let carBrands = [];
+			let totalBrands = parseInt(prompt('Hoeveel automerken wil je invoeren?'));
+
+			for (let i = 0; i < totalBrands; i++) {
+				carBrands.push(prompt('Geef een automerk in:'));
+			}
+
+			document.write('U gaf volgende merken in: <br>');
+
+			for (let i = 0; i < carBrands.length; i++) {
+				document.write(`${i + 1}. ${carBrands[i]} <br>`);
+			}
+		</script>
+	</body>
+</html>
